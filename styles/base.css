@@ -1,0 +1,89 @@
+:root {
+    --primary-color: #59382C;
+    --secondary-color: #000000;
+    --primary-font-color: #fff;
+    --secondary-font-color: #000;
+}
+
+body {
+    background-color: antiquewhite;
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+h1 {
+    background-color: var(--primary-color);
+    margin: 0;
+    padding: 15px;
+    color: var(--primary-font-color);
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    background-color: var(--secondary-color);
+}
+
+nav a {
+    text-decoration: none;
+    color: aliceblue;
+    margin: 15px;
+}
+
+nav a:hover {
+    color: lightcoral;
+    transform: scale(1.2);
+}
+
+main {
+    display: grid;
+    grid-template-columns: 5fr 3fr;
+    max-width: 840px;
+    margin: 0 auto;
+}
+
+.card {
+    border: 1px solid #000;
+    border-radius: 5%;
+    margin: 10px;
+    padding: 10px;
+}
+
+h3 {
+    border-top: 1px solid var(--primary-color);
+}
+
+.card a {
+    text-decoration: none;
+}
+
+.card ul {
+    list-style: none;
+}
+
+.flag {
+    width: 200px;
+    height: auto;
+    border-radius: 20%;
+}
+
+.me {
+    float: right;
+    width: 100px;
+    height: auto;
+    border-radius: 10%;
+    margin: 5px;
+}
+
+h2 {
+    background-color: var(--primary-color);
+    color: var(--primary-font-color);
+    margin: 0;
+}
+
+footer {
+    background-color: var(--primary-color);
+    margin: 0;
+    padding: 10px;
+    color: var(--primary-font-color);
+}

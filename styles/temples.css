@@ -1,0 +1,182 @@
+:root {
+	--primary-color: navy;
+}
+
+body {
+	font-family: 'Roboto', sans-serif;
+}
+  
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+.header {
+	display: flex;
+	flex-direction: row;
+	background-color: var(--primary-color);
+	color: #fff;
+	padding: 1rem;
+	align-items: center;
+	position: relative;
+}
+
+.header h1 {
+	margin: 1rem;
+	transition: opacity 0.3s ease;
+	font-family: 'Roboto';
+}
+
+main {
+	padding: .5rem;
+	margin: auto;
+	text-align: center;
+}
+
+.temples {
+	display: grid;
+	grid-template-columns: 1fr;
+}
+
+img {
+	width: 100%;
+	height: auto;
+	max-width: 300px;
+	margin: 10px auto;
+	display: block;
+	transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.temples img:hover {
+	transform: scale(1.05);
+	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+	transition: transform 0.3s ease, box-shadow 0.3s ease;
+	cursor: pointer;
+}
+  
+
+h1 {
+	text-align: left;
+	font-family: times, serif;
+	font-size: 1.5rem;
+	margin-left: 1rem;
+	text-align: center;
+	font-family: 'Roboto';
+}
+
+nav {
+	margin: 1rem auto;
+
+}
+
+#menu {
+	font-size: 1.8rem;
+	border: 0;
+	background: none;
+	color: var(--primary-color);
+	top: 1rem;
+	right: 1rem;
+	cursor: pointer;
+	z-index: 1000;
+}
+
+#menu::before {
+	content: "☰";
+	color: #fff;
+}
+
+#menu.open::before {
+	content: "❌";
+}
+
+.header h1.hidden {
+	display: none;
+}
+  
+
+.navigation {
+	display: flex;
+	flex-direction: column;
+	list-style: none;
+	background-color: var(--primary-color);
+	color: #fff;
+	gap: 1rem;
+	margin-left: auto;
+}
+
+.navigation a {
+	display: none;
+	padding: 1rem;
+	text-align: center;
+	text-decoration: none;
+	color: #fff;
+}
+.navigation a:hover {
+	background-color: #fff;
+	color: var(--primary-color);
+	font-weight: 700;
+}
+
+p {
+	color: #fff;
+}
+
+.open a {
+	display: block;
+}
+
+footer {
+    background-color: var(--primary-color);
+    margin: 0;
+    padding: 20px;
+    color: var(--primary-font-color);
+	text-align: center;
+}
+
+@media (min-width: 600px) {
+	.temples {
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+	}
+}
+
+@media (min-width: 1000px) {
+	h1 {
+		font-size: 2.5rem;
+		margin-left: 0;
+		text-align: center;
+	}
+
+	.header {
+		display: flex;
+		background-color: var(--primary-color);
+		color: #fff;
+		padding: 0;
+		align-items: center;
+	}
+
+	#menu {
+		display: none;
+	}
+
+	.navigation {
+		flex-direction: row;
+	}
+
+	.navigation a {
+		display: block;
+		flex: 1 1 100%;
+	}
+
+	.temples {
+		display: grid;
+		grid-template-columns: 1fr 1fr 1fr;
+		grid-template-rows: 1fr 1fr 1fr;
+	}
+
+	.header h1 {
+		margin: 1rem;
+	}
+}

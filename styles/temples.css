@@ -82,6 +82,11 @@ nav {
 	z-index: 1000;
 }
 
+#menu {
+	color: #fff;
+}
+  
+
 #menu::before {
 	content: "☰";
 	color: #fff;

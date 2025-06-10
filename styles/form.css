@@ -1,0 +1,127 @@
+* { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
+
+
+body {
+    font-size: 16px;
+    font-family: Verdana, sans-serif;
+    margin: 0 30px 0 30px;
+}
+
+header {
+    padding: .5rem 2%;
+    background-color: #220720;
+    color: #fff;
+}
+header h1 {
+    margin: 0;
+}
+
+
+main {
+    padding: 0 2%;
+    min-height: 20rem;
+    background-color: #b395b5;
+    margin-top: 10px;
+}
+
+.rating {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 1em;
+    padding: 0 .5rem;
+    color: #000;
+    font-size: 1.2rem;
+}
+
+.features {
+    display: block;
+}
+
+.rating-options {
+    display: flex;
+    gap: 1em;
+}
+
+.rating-option {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.rating-option input[type="radio"] {
+    margin-bottom: 0.25em;
+}
+
+
+.review-form fieldset {
+    margin: 2rem 0;
+    border: solid 1px #ddd;
+    border-radius: 6px;
+    padding: .5rem 2%;
+}
+
+.review-form label {
+    display: block;
+    padding-top: 1rem;
+    color: #000;
+    font-size: .9rem;
+}
+
+.review-form input[type="text"],
+.review-form input[type="tel"],
+.review-form input[type="email"],
+.review-form input[type="url"],
+.review-form input[type="date"],
+.review-form input[type="number"],
+.review-form select,
+.review-form textarea{
+    background-color: #eee;
+    display: block;
+    border: solid 1px #999;
+    border-radius: 6px;
+    padding: .75rem;
+    color: #555;
+    width: 100%;
+    max-width: 400px;
+}
+
+.review-form input[type="radio"],
+.review-form input[type="checkbox"] {
+    margin-right: 6px;
+
+}
+
+.review-form button[type="submit"] {
+    border: none;
+    background-image: linear-gradient(#9c2c13, #6f200e);
+    color: #fff;
+    border-radius: 6px;
+    padding: .8rem;
+    width: 96%;
+    max-width: 400px;
+    margin: 10px 0 10px 0;
+    box-shadow: 1px 1px 4px #999;
+}
+
+.review-form input:required {
+    border-bottom: solid 8px red;
+}
+
+.review-form input:required:valid {
+    border-bottom: solid 8px green;
+}
+
+
+footer {
+    background-color: #220720;
+    color: #fff;
+    padding: .5rem 2%;
+    text-align: center;
+    margin-top: 10px;
+}
+
+.review-page {
+    text-align: center;
+    padding: 2rem;
+}

@@ -93,7 +93,7 @@ nav {
 }
 
 #menu.open::before {
-	content: "❌";
+	content: "X";
 }
 
 .header h1.hidden {

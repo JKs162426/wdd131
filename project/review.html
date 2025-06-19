@@ -8,12 +8,14 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles/style.css">
     <script src="script/languages.js" defer></script>
+    <script src="../script/review.js" defer></script>
     <title>Languages - Via Linguarum</title>
 </head>
 <body>
     <header>
         <a href="#"><img src="images/logo.webp" alt="logo" class="logo" width="75" height="75" loading="lazy"></a>
         <button type="button" id="menu"><span class="menu-label">Menu</span></button>
+        <h1></h1>
         <div class="menu-container">
             <nav class="navigation">
                 <ul>
@@ -25,84 +27,9 @@
             </nav>
         </div>
     </header>
-    <main>
-        <h1>Resources</h1>
-        <p>Here you will find a curated list of resources to help you on your language learning journey.</p>
-        <div class="resources-container">
-            <div class="apps">
-                <h2>Apps</h2>
-                <ul>
-                    <li><a href="https://www.duolingo.com/">Duolingo</a></li>
-                    <li><a href="https://www.babbel.com/">Babbel</a></li>
-                    <li><a href="https://www.busuu.com/">Busuu</a></li>
-                    <li><a href="https://www.memrise.com/">Memrise</a></li>
-                </ul>
-            </div>
-            <div class="youtube">
-                <h2>YouTube Channels</h2>
-                <ul>
-                    <li><a href="https://www.youtube.com/c/easygerman">Easy German</a></li>
-                    <li><a href="https://www.youtube.com/@italianoautomatico">Italiano Automatico</a></li>
-                    <li><a href="https://www.youtube.com/@BeFluentinRussian">Be Fluent in Russian</a></li>
-                    <li><a href="https://www.youtube.com/c/LearnEnglishwithEmma">Learn English with Emma</a></li>
-                </ul>
-            </div>
-            <div class="books">
-                <h2>Books</h2>
-                <ul>
-                    <li><a href="https://www.amazon.com/Fluent-Forever-Gabriel-Wyner/dp/110190378X">Fluent Forever by Gabriel Wyner</a></li>
-                    <li><a href="https://www.amazon.com/Language-Instinct-How-Mind-Works/dp/0061336458">The Language Instinct by Steven Pinker</a></li>
-                    <li><a href="https://www.amazon.com/Polyglot-Languages-Kato-Lomb/dp/1515130661">Polyglot: How I Learn Languages by Kató Lomb</a></li>
-                    <li><a href="https://www.amazon.com/Language-Learning-Unlocked-David-Peterson/dp/1945051832">Language Learning Unlocked by David J. Peterson</a></li>
-                </ul>
-            </div>
-            <div class="podcasts">
-                <h2>Podcasts</h2>
-                <ul>
-                    <li><a href="https://www.easygerman.org/podcast/">Easy German Podcast</a></li>
-                    <li><a href="https://www.befluent.com/podcast">Be Fluent Podcast</a></li>
-                    <li><a href="https://www.englishclass101.com/podcast/">Learn English | EnglishClass101.com</a></li>
-                    <li><a href="https://www.frenchmadeeasy.com/podcast/">French Made Easy</a></li>
-                </ul>
-            </div>
-        </div>
-        <p>These are just a few of the many language learning resources available, but they’re among the most effective ones I’ve used.</p>
-        <p>Stay updated with the latest resources and tips for language learning!</p>
-        <form action="review.html">
-            <label id="form-label">Subscribe to our Newsletter</label>
-            <br>
-            <label for="name">Name:</label>
-            <input type="text" id="name" name="name" required>
-            <br>
-            <label for="last-name">Last Name:</label>
-            <input type="text" id="last-name" name="last-name" required>
-            <br>
-            <label for="email">Email:</label>
-            <input type="email" id="email" name="email" required>
-            <br>
-            <label for="favorite-language">Favorite Language:</label>
-            <select name="favorite-language" id="favorite-language">
-                <option disabled selected>Select your favorite language</option>
-                <option value="english">English</option>
-                <option value="spanish">Spanish</option>
-                <option value="french">French</option>
-                <option value="german">German</option>
-                <option value="italian">Italian</option>
-                <option value="japanese">Japanese</option>
-                <option value="chinese">Chinese</option>
-                <option value="korean">Korean</option>
-                <option value="russian">Russian</option>
-                <option value="arabic">Arabic</option>
-                <option value="turkish">Turkish</option>
-                <option value="finnish">Finnish</option>
-                <option value="danish">Danish</option>
-                <option value="norwegian">Norwegian</option>
-                <option value="swedish">Swedish</option>
-                <option value="other">Other</option>
-            </select>
-            <br>
-            <button type="submit" value="Submit Review">Get Newsletter</button>
-        </form>
+    <main class="review">
+        <h2>Thanks for your Subscription</h2>
+        <p>You will now receive the latest news and updates directly in your inbox.</p>
     </main>
     <footer>
         <div class="footer-links">
@@ -127,10 +54,9 @@
                 <path d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854zm4.943 12.248V6.169H2.542v7.225zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248S2.4 3.226 2.4 3.934c0 .694.521 1.248 1.327 1.248zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016l.016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225z"/></svg></a>
             </div>
         </div>
-        <div class="footer-info">
+            <div class="footer-info">
             <p>©<span id="currentyear"></span> Jesús Figueroa Utah, USA</p>
             <p id="lastModified"></p>
-        </div>
     </footer>
 </body>
 </html>
